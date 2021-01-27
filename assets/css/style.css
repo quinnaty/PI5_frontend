@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(45, 37, 38, 0.6);
+  background: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
@@ -348,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -363,7 +363,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   display: flex;
-  background-image: linear-gradient(to top, rgba(137, 209, 50, 0.010), rgba(169, 218, 188, 0.10) , rgba(146, 204, 179, 0.10), rgba(106,177,159,0.10));
   justify-content: center;
   align-items: baseline;
   flex-direction: column;
@@ -373,8 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #hero h3 {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.1);  color: #fff;
   font-size: 26px;
   padding: 10px 30px;
   margin-bottom: 30px;
@@ -521,7 +519,7 @@ section {
 }
 
 .ilustracao img{
-  margin-inline-start: 160px;
+  margin-inline-start: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -825,7 +823,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(213, 219, 122, 0.5), rgba(95, 189, 103, 0.8)), url("../img/bground/bkg_triangle_repeat.png") center center;
+  background: url("../img/bground/bkg_triangle_repeat.png") center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -921,7 +919,7 @@ section {
 
 @media (min-width: 1280px) {
   .faq .container {
-    padding: 0 120px;
+    padding: 0 1px;
   }
 }
 
