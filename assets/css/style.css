@@ -616,11 +616,6 @@ section {
   z-index: -1;
 }
 
-.services .icon-box:hover::before {
-  background: #FCC360;
-  top: 0;
-  border-radius: 0px;
-}
 
 .services .icon {
   margin-bottom: 15px;
@@ -649,13 +644,7 @@ section {
   margin-bottom: 0;
 }
 
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
-  color: #fff;
-}
 
-.services .icon-box:hover .icon i {
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Features
