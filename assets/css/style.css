@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   height: 70vh !important;
   width: 100%;
-  background: url("../img/bground/bkg_triangle_repeat.png") top center !important;
+  background: url("../img/bground/bkg_triangle_repeat.png")top center no-repeat !important;
   background-size: cover;
   position: relative;
   padding-bottom: 90px;
@@ -922,85 +922,62 @@ section {
     padding: 0 1px;
   }
 }
-
 /*--------------------------------------------------------------
-# Team
+# QUESTS
 --------------------------------------------------------------*/
-.team {
-  background: #fff;
-  padding: 60px 0;
+.quests {
+  padding: 20px 0px 100px 100px;
 }
 
-.team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+.quests .quests-list {
+  padding: 0;
+  list-style: none;
 }
 
-.team .member .member-img {
+.quests .quests-list li {
+  padding: 0 0 20px 25px;
+}
+
+.quests .quests-list a {
+  display: block;
   position: relative;
-  overflow: hidden;
+  font-family: #FCC360;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.team .member .social {
+.quests .quests-list i {
+  font-size: 18px;
   position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.85);
+  left: -25px;
+  top: 6px;
 }
 
-.team .member .social a {
-  transition: color 0.3s;
-  color: #493c3e;
-  margin: 0 10px;
-  padding-top: 8px;
-  display: inline-block;
+.quests .quests-list p {
+  margin-bottom: 20px;
+  font-size: 15px;
 }
 
-.team .member .social a:hover {
+.quests .quests-list a.collapse {
   color: #FCC360;
 }
 
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
+.quests .quests-list a.collapsed {
+  color: #343a40;
 }
 
-.team .member .member-info {
-  padding: 25px 15px;
+.quests .quests-list a.collapsed:hover {
+  color: #FCC360;
 }
 
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #493c3e;
+.quests .quests-list a.collapsed i::before {
+  content: "\eab2" !important;
 }
 
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.team .member:hover .social {
-  opacity: 1;
+@media (min-width: 1280px) {
+  .quests .container {
+    padding: 0 1px;
+  }
 }
 
 /*--------------------------------------------------------------
